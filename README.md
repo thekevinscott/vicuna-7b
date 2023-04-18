@@ -13,7 +13,7 @@ See the [`Instructions` section here](https://mlc.ai/web-llm/) for more informat
 Install with:
 
 ```bash
-npm install vicuna-7b`
+npm install vicuna-7b
 ```
 
 Then, you can import it into your project with:

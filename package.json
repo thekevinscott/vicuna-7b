@@ -1,12 +1,13 @@
 {
   "name": "vicuna-7b",
   "description": "Programmatic access to the Vicuna 7B LLM model",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "files": [
     "dist",
     "public"
   ],
   "main": "./dist/Vicuna7B.umd.js",
+  "types": "./dist/Vicuna7B.d.ts",
   "module": "./dist/Vicuna7B.es.js",
   "exports": {
     ".": {
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "rimraf ./dist && vite build",
     "preview": "vite preview"
   },
   "keywords": [
@@ -29,8 +30,10 @@
   "author": "Kevin Scott",
   "license": "Apache",
   "devDependencies": {
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4",
     "vite": "^4.2.2",
+    "vite-plugin-dts": "^2.3.0",
     "vite-plugin-mkcert": "^1.14.0"
   }
 }

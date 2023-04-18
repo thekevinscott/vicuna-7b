@@ -1,4 +1,4 @@
-import packageJSON from '../package.json';
+import packageJSON from '../../package.json';
 
 const getPackageVars = (): { name: string; version: string; } => {
   const {

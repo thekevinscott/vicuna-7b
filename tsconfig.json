@@ -5,6 +5,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "types": ["vite/client"]
-  }
+  },
+  "files": [
+    "packages/vicuna-7b/vicuna7b.ts",
+  ]
 }

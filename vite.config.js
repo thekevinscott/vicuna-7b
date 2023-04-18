@@ -17,6 +17,7 @@ export default defineConfig({
     mkcert(),
     dts({
       insertTypesEntry: true,
+      rollupTypes: true,
     }),
   ]
 });

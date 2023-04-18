@@ -4,6 +4,8 @@ Vicuna 7B is a large language model that runs in the browser.
 
 This is a port of the fantastic [`web-llm` implementation](https://github.com/mlc-ai/web-llm). This library packages up the LLM model and exposes programmatic access with minimal configuration.
 
+[Demo](https://thekevinscott.github.io/vicuna-7b/)
+
 ## Prerequisites
 
 See the [`Instructions` section here](https://mlc.ai/web-llm/) for more information on required prerequisites, and confirm that the demo UI works with your hardware.

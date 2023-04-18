@@ -1,0 +1,35 @@
+{
+  "name": "vicuna-7b",
+  "description": "Programmatic access to the Vicuna 7B LLM model",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/Vicuna7B.umd.js",
+  "module": "./dist/Vicuna7B.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/Vicuna7B.es.js",
+      "require": "./dist/Vicuna7B.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vicuna",
+    "Vicuna 7B",
+    "llm",
+    "chat",
+    "Large Language Model"
+  ],
+  "author": "Kevin Scott",
+  "license": "Apache",
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite": "^4.2.2",
+    "vite-plugin-mkcert": "^1.14.0"
+  }
+}

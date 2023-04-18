@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vicuna 7B Example</title>
+
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./github-markdown.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    #container {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    label {
+      display: block;
+    }
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      padding: 8px;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body class="markdown-body">
+  <div id="container">
+    <h1>Vicuna 7B LLM</h1>
+    <p>This is a port of <a href="https://github.com/mlc-ai/web-llm"><code>web-llm</code></a> that exposes programmatic access to the Vicuna 7B LLM model in your browser.</p>
+    <p>If you're looking for a UI, check out the original project linked above.</p>
+    <p><strong>To run this page requires some set up.</strong> Please view the instructions at the <a href="https://mlc.ai/web-llm/">original demo page</a>.</p>
+    <p>Open your page console to see some interim feedback.</p>
+
+    <hr />
+
+    <form id="form">
+      <label>Input</label>
+      <textarea id="input">Tell me a joke about otters!</textarea>
+      <button type="submit">Generate</button>
+    </form>
+    <label>Output</label>
+    <pre id="output"></pre>
+  </div>
+
+  <script type="module" src="./dev/index.js"></script>
+</body>
+</html>

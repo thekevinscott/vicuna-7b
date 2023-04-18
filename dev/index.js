@@ -3,7 +3,7 @@ import Vicuna7B from '../packages/vicuna-7b';
 const llm = new Vicuna7B({ logger: console.log, initCallback: console.log });
 
 const form = document.getElementById('form');
-const submit = document.getElementById('button');
+const submit = document.getElementById('submit');
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 

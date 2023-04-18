@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "vite",
     "build": "rimraf ./dist && vite build",
-    "preview": "vite preview"
+    "build:dev": "rimraf ./dist && vite build --config vite.config.dev.ts",
+    "serve:dev": "pnpx http-server dist"
   },
   "keywords": [
     "vicuna",

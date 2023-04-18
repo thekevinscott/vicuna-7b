@@ -5,4 +5,5 @@ node_modules
 index.html
 pnpm-lock.yaml
 vite.config.js
+vite.config.dev.ts
 tsconfig.json

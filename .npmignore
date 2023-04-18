@@ -1,6 +1,6 @@
 dev
 packages
-lib
+node_modules
 .gitignore
 index.html
 pnpm-lock.yaml

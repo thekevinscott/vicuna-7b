@@ -1,7 +1,7 @@
 {
   "name": "vicuna-7b",
   "description": "Programmatic access to the Vicuna 7B LLM model",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "files": [
     "dist",
     "public"

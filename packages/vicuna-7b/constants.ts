@@ -22,7 +22,7 @@ const getPackageVars = (): { name: string; version: string; } => {
 const { name, version } = getPackageVars();
 
 export const ROOT_CDN_URL = `https://cdn.jsdelivr.net/npm/${name}@${version}`;
-export const ROOT_PUBLIC_URL = `${ROOT_CDN_URL}/public`;
+export const ROOT_PUBLIC_URL = `${ROOT_CDN_URL}/lib`;
 
 export const RUNTIME_URL = `${ROOT_PUBLIC_URL}/tvmjs_runtime.wasi.js`;
 export const BUNDLE_URL = `${ROOT_PUBLIC_URL}/tvmjs.bundle.js`;

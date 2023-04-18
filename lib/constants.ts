@@ -4,6 +4,8 @@ import tokenizer from './tokenizer.model?url';
 import vicuna from './vicuna-7b_webgpu.wasm?url';
 import sentencePiece from './sentencepiece/index.js?url';
 
+export const ROOT_CDN_URL = 'https://cdn.jsdelivr.net/npm/vicuna-7b@latest/';
+
 export const RUNTIME_URL = runtime;
 export const BUNDLE_URL = bundle;
 export const TOKENIZER_URL = tokenizer;

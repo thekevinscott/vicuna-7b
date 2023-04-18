@@ -28,6 +28,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - uses: pnpm/action-setup@v2
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
@@ -36,9 +37,9 @@ jobs:
           node-version: 18
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Build
-        run: npm run build:dev
+        run: pnpm run build:dev
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

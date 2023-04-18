@@ -1,15 +1,33 @@
-import runtime from './tvmjs_runtime.wasi.js?url';
-import bundle from './tvmjs.bundle.js?url';
-import tokenizer from './tokenizer.model?url';
-import vicuna from './vicuna-7b_webgpu.wasm?url';
-import sentencePiece from './sentencepiece/index.js?url';
+import packageJSON from '../package.json';
 
-export const ROOT_CDN_URL = 'https://cdn.jsdelivr.net/npm/vicuna-7b@latest/';
+const getPackageVars = (): { name: string; version: string; } => {
+  const {
+    name,
+    version,
+  } = packageJSON;
 
-export const RUNTIME_URL = runtime;
-export const BUNDLE_URL = bundle;
-export const TOKENIZER_URL = tokenizer;
-export const VICUNA_URL = vicuna;
-export const SENTENCE_PIECE_URL = sentencePiece;
+  if (import.meta.env.DEV) {
+    return {
+      name,
+      version: 'latest',
+    };
+  }
+
+  return {
+    name,
+    version,
+  }
+}
+
+const { name, version } = getPackageVars();
+
+export const ROOT_CDN_URL = `https://cdn.jsdelivr.net/npm/${name}@${version}`;
+export const ROOT_PUBLIC_URL = `${ROOT_CDN_URL}/public`;
+
+export const RUNTIME_URL = `${ROOT_PUBLIC_URL}/tvmjs_runtime.wasi.js`;
+export const BUNDLE_URL = `${ROOT_PUBLIC_URL}/tvmjs.bundle.js`;
+export const TOKENIZER_URL = `${ROOT_PUBLIC_URL}/tokenizer.model`;
+export const VICUNA_URL = `${ROOT_PUBLIC_URL}/vicuna-7b_webgpu.wasm`;
+export const SENTENCE_PIECE_URL = `${ROOT_PUBLIC_URL}/sentencepiece/index.js`;
 export const CACHE_URL = "https://huggingface.co/mlc-ai/web-lm/resolve/main/vicuna-0b/";
 export const NOOP = () => {};

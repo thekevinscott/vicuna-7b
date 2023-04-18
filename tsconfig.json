@@ -9,6 +9,6 @@
     "types": ["vite/client"]
   },
   "files": [
-    "packages/vicuna-7b/vicuna7b.ts",
+    "packages/vicuna-7b/index.ts",
   ]
 }

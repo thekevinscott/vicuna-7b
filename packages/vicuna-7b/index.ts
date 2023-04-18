@@ -79,7 +79,6 @@ class Vicuna7B {
       this.getTokenizer(),
     ]);
     this.tvm = await this.getTVM();
-    console.log('callback', callback);
     this.tvm.registerInitProgressCallback(callback || NOOP);
     await this.tvm.fetchNDArrayCache(cacheUrl, this.tvm.webgpu());
 

@@ -1,4 +1,4 @@
-import Vicuna7B from '../packages/vicuna-7b/main';
+import Vicuna7B from '../packages/vicuna-7b/vicuna7b';
 
 const llm = new Vicuna7B({ logger: console.log, initCallback: console.log });
 

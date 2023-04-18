@@ -8,7 +8,7 @@ import { config } from "./config";
 /**
  * A instance that can be used to facilitate deployment.
  */
-export class Vicuna7B {
+class Vicuna7B {
   tvm?: TVM;
   pipeline: Promise<LLMChatPipeline>;
   ready: Promise<void>;
@@ -121,3 +121,7 @@ declare global {
     EmccWASI: EmccWASI;
   }
 }
+
+export default Vicuna7B;
+
+export * from './types';

@@ -6,6 +6,8 @@ This is a port of the fantastic [`web-llm` implementation](https://github.com/ml
 
 [Demo](https://thekevinscott.github.io/vicuna-7b/)
 
+![Gif of UI Demo](./assets/ui-demo.gif)
+
 ## Prerequisites
 
 See the [`Instructions` section here](https://mlc.ai/web-llm/) for more information on required prerequisites, and confirm that the demo UI works with your hardware.
@@ -81,7 +83,7 @@ const generateCallback = (step, text) => {
 }
 const config = {
   maxGenLength: 32,
-  stopWords: ['foo'],
+  stopWords: ['Q:'],
   temperature: 0.5,
   top_p: 0.95,
   callback: generateCallback,

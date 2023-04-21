@@ -1,7 +1,7 @@
 {
   "name": "vicuna-7b",
   "description": "Programmatic access to the Vicuna 7B LLM model",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "files": [
     "dist",
     "lib"
@@ -26,10 +26,28 @@
     "Vicuna 7B",
     "llm",
     "chat",
-    "Large Language Model"
+    "language model",
+    "nlp",
+    "natural language processing",
+    "AI",
+    "artificial intelligence",
+    "machine learning",
+    "deep learning",
+    "browser-based",
+    "chatbot",
+    "conversational AI",
+    "browser-based language model",
+    "natural language understanding",
+    "text generation",
+    "browser-based NLP",
+    "text processing"
   ],
   "author": "Kevin Scott",
   "license": "Apache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thekevinscott/vicuna-7b.git"
+  },
   "devDependencies": {
     "rimraf": "^5.0.0",
     "typescript": "^5.0.4",

@@ -47,14 +47,14 @@ The constructor accepts an optional payload of arguments:
 
 - `initCallback` - An optional initialization callback
 - `logger` - An optional general logging function callback;
-- `runtimeURL` - An optional string denoting a URL to the runtime URL
-- `bundleURL` - An optional string denoting a URL to the bundle URL
-- `tokenizerURL` - An optional string denoting a URL to the tokenizer URL
-- `vicunaURL` - An optional string denoting a URL to the model URL
-- `sentencePieceURL` - An optional string denoting a URL to the sentence piece URL
-- `cacheURL` - An optional string denoting a URL to the cache URL
+- `runtimeURL` - An optional string denoting a URL to the runtime URL (corresponds to `lib/tvmjs_runtime.wasi.js`)
+- `bundleURL` - An optional string denoting a URL to the bundle URL (corresponds to `lib/tvmjs.bundle.js`)
+- `tokenizerURL` - An optional string denoting a URL to the tokenizer URL (corresponds to `lib//tokenizer.model`)
+- `vicunaURL` - An optional string denoting a URL to the model URL (corresponds to `lib/vicuna-7b_webgpu.wasm`)
+- `sentencePieceURL` - An optional string denoting a URL to the sentence piece URL (corresponds to `lib/sentencepiece/index.js`)
+- `cacheURL` - An optional string denoting a URL to the cache URL (corresponds to `https://huggingface.co/mlc-ai/web-lm/resolve/main/vicuna-0b/`)
 
-URL arguments are optional. By default the library will load from a CDN if no URLs are provided.
+By default the library will load its runtime requirements from a CDN, [https://www.jsdelivr.com/](jsdelivr), if no URL arguments are provided.
 
 An example with full options looks like:
 

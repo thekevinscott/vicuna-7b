@@ -6,7 +6,7 @@ This is a port of the fantastic [`web-llm` implementation](https://github.com/ml
 
 [Demo](https://thekevinscott.github.io/vicuna-7b/)
 
-![Gif of UI Demo](./assets/ui-demo.gif)
+![Gif of UI Demo](https://github.com/thekevinscott/vicuna-7b/raw/main/assets/ui-demo.gif)
 
 ## Prerequisites
 
